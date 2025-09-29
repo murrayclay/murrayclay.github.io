@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Maxwellian Animation</title>
+<link rel="stylesheet" type="text/css" href="maxwell_anim_1.css"/>
+</head>
+<body>
+
+<div class="animationcontainer" id="fixedsize">
+  <canvas id="canvas"></canvas>
+  <button id="exp_button_1">Explode!</button>
+  <script src="maxwell_animation_1.js"></script>
+  <input type="range" min="1" max="15" value="5" class="slider" id="vel_slider_1">
+  <p id="xaxis_title">particle speed</p>
+  <p id="velslider_label">initial speed of all particles</p>
+  <p id="velslider_sublabel">(= RMS speed of expected Maxwellian)</p>
+  <p id="curve_label">curve = Maxwellian <br> probabilty distribution</p>
+  <p id="hist_label">Histogram of Particle Speeds</p>
+</div>
+
+</body>
+</html>

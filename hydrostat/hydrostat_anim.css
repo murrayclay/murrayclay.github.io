@@ -1,0 +1,137 @@
+canvas {
+    border: 3px solid #004F6E;
+}
+
+body {
+    margin: 0;
+}
+
+.animationcontainer {
+    width: 100%; /* Width of the outside container */
+    position: relative;
+}
+
+.animationcontainer > canvas,
+.animationcontainer > input,
+.animationcontainer > button {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+#fixedsize > canvas {
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+#grav_button_1 {
+    position: fixed;
+    left: 360px;
+    width: 120px;
+    top: 550px;
+}
+
+.animationcontainer > input {
+    right: 2.5%;
+}
+
+.animationcontainer > input.slider {
+    top: 80%;
+}
+
+.animationcontainer > #nparticles_slider {
+    top: 10%;
+}
+
+.animationcontainer > #radius_slider {
+    top: 20%;
+}
+
+.animationcontainer > button {
+    right: 2.5%;
+    top: 90%
+}
+
+.animationcontainer > button {
+    background-color: #D3D3D3; 
+    border: none;
+    color: black;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    height: 30px;
+    border-radius: 30px;
+}
+ 
+.slider {
+    -webkit-appearance: none;
+    width: 45%;
+    height: 15px;
+    border-radius: 5px;
+    background: #D3D3D3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+/* slider handle (use -webkit- (Chrome, Safari) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 20px; /* slider handle width */
+    height: 20px;
+    border-radius: 50%;
+    background: #42A6C6;
+    cursor: pointer; /* cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #42A6C6;
+    cursor: pointer;
+}
+
+.sm_slider {
+    -webkit-appearance: none;
+    width: 10%;
+    height: 10px;
+    border-radius: 4px;
+    background: #D3D3D3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.sm_slider:hover {
+    opacity: 1;
+}
+
+/* slider handle (use -webkit- (Chrome, Safari) and -moz- (Firefox) to override default look) */
+.sm_slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 15px; /* slider handle width */
+    height: 15px;
+    border-radius: 50%;
+    background: #F56E47;
+    cursor: pointer; /* cursor on hover */
+}
+
+.sm_slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #F56E47;
+    cursor: pointer;
+}
